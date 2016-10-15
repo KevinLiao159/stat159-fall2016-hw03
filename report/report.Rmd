@@ -101,7 +101,7 @@ corr = xtable(corr_matrix, caption = "Correlations Matrix")
 print(corr, comment=FALSE, type = "latex", caption.placement = 'top')
 ```
 
-This table indicates correlation matrix for TV, radio, newspaper, and sales for the Advertising data.
+This table indicates correlation matrix for TV, radio, newspaper, and sales for the Advertising data. This correlation matrix explains a lot. From previous three each simple linear models, we learned that all of the predictors are useful in predicting the response. Now again looking at the correlation, we make verify that there is clear strong correlation between sales and TV, Radio. Although we also found out Newspaper has the weakest relation with sales, yet it is some what related with Radio.
 
 
 Next, let's examine the quality of fitness by analyzing key statistics
@@ -118,6 +118,8 @@ df = data.frame(Quantity= c("Residual Standard Error", "R-squared",
 print(xtable(df, caption = 'Regression Quality Indices'), comment = FALSE, caption.placement = 'top')
 ```
 
+From this table, we can first examined R squared, which is .90. This means the data is a good fit to the regression line. The F-statistics is high, which mean at least one advertisement has a correlation with Sales.
+Further, with conclusion from the correlation matrix, although Newspaper may not be a good predictor, yet TV and Radio are the good predictors. And they fit the data pretty well based on the statistics we seen here. 
 
 Here are some sample images relating Advertising dataset
 
