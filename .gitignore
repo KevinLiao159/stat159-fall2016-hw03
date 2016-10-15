@@ -1,4 +1,0 @@
-
-# ignore .Rhistory and .DS_Store
-*.R
-*.DS_store
