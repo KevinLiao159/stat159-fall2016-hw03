@@ -1,0 +1,3 @@
+# ignore .Rhistory and .DS_Store
+*.Rapp.history
+*.DS_store
