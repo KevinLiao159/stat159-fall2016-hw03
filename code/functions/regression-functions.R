@@ -1,6 +1,3 @@
-# Setting working directory
-setwd("~/Documents/stat159/stat159-fall2016-hw03")
-
 # The following functions are referred from "An Introduction to Statistical Learning"
 
 # Compute Residual sum of squares (p.69)

@@ -1,8 +1,4 @@
-library(testthat)
-# Setting working directory
-setwd("~/Documents/stat159/stat159-fall2016-hw03")
-
-source("code/functions/regression-functions.R")
+source("../functions/regression-functions.R")
 
 context("Test for regression functions")
 

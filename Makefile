@@ -11,23 +11,28 @@ data:
 
 #Run Rscript to test the regression script
 tests: code/test-that.R
-	Rscript code/test-that.R
+	cd code && Rscript test-that.R
+	
 
 #Run eda-script to generate images and summary statistics
 eda: code/scripts/eda-script.R $(dataset)
-	Rscript code/scripts/eda-script.R
+	cd code/scripts && Rscript eda-script.R
+	
 
 #Run multiple regression 
 regression: 
-	Rscript code/scripts/regression-script.R
+	cd code/scripts && Rscript regression-script.R
+	
 
 #Save session info information
 session-info: code/scripts/session-info-script.R
-	Rscript code/scripts/session-info-script.R
+	cd code/scripts && Rscript session-info-script.R
+	
 	
 #Generate pdf report
 report: report/report.Rmd
-	Rscript -e 'library(rmarkdown); render("report/report.Rmd")'
+	cd report && Rscript -e 'library(rmarkdown); render("report.Rmd","pdf_document")'
+	
 
 #clean the target
 clean:

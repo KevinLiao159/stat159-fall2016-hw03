@@ -1,8 +1,5 @@
-# Setting working directory
-setwd("~/Documents/stat159/stat159-fall2016-hw03")
-
 # Output session-info-script.txt
-sink(file = "./session-info.txt")
+sink(file = "../../session-info.txt")
 # To avoid unnecessary warnings on the terminal
 options(warn = -1)
 library(ggplot2)
